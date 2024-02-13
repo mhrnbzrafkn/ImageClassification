@@ -2,7 +2,6 @@ import os
 import numpy as np
 import cv2 as cv
 from keras.preprocessing.image import ImageDataGenerator
-from keras.preprocessing import image
 from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
 from keras.models import load_model
@@ -11,7 +10,7 @@ from keras.models import load_model
 
 # Path To Datas
 dataPath = './images/car/'
-modelPath = dataPath + 'model.h5'
+modelPath = dataPath + 'model.keras'
 
 # Define data directories
 train_dir = dataPath + 'train/'
